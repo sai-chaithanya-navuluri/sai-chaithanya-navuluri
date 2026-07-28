@@ -4,7 +4,7 @@
 
 I build scalable enterprise applications across financial, healthcare, and retail domains — and lately, production-grade AI platforms. My core is backend engineering (Java, Spring Boot, microservices, AWS), and I bring that same rigor — testing, observability, clean architecture, documented decisions — to LLM systems.
 
-📍 Atlanta, GA · 📫 chaithanyasc208@gmail.com · 💼 [LinkedIn](https://www.linkedin.com/in/chaithanya-n-775a96174/)
+📫 chaithanyasc208@gmail.com · 💼 [LinkedIn](https://www.linkedin.com/in/chaithanya-n-775a96174/)
 
 ---
 
