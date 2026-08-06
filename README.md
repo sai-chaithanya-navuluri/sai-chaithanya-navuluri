@@ -56,11 +56,11 @@ The shared platform is consumed by four independent automation pipelines (three 
 
 The platform includes detailed engineering documentation covering its architecture, design decisions, scalability, testing strategy, and operational characteristics.
 
-- 🏗️ [**Architecture**](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/ARCHITECTURE.md) — Overall platform architecture, request flow, and component interactions.
-- ⚙️ [**Engineering Principles**](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/ENGINEERING_PRINCIPLES.md) — Enterprise engineering patterns and their application throughout the platform.
-- 📈 [**Scalability**](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/SCALABILITY.md) — Scaling strategy, bottlenecks, worker model, and future evolution.
-- 🚀 [**Performance**](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/PERFORMANCE.md) — Performance characteristics, optimization techniques, and engineering tradeoffs.
-- ✅ [**Testing**](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/TESTING.md) — Testing philosophy, workflow validation, and CI strategy.
-- 📖 [**Architecture Decision Records (ADRs)**](https://github.com/sai-chaithanya-navuluri/content-core/tree/main/docs/adr) — Major technical decisions, alternatives considered, tradeoffs, and architectural evolution.
+- 🏗️ [**Architecture**](https://github.com/sai-chaithanya-navuluri/content-core/blob/master/docs/ARCHITECTURE.md) — Overall platform architecture, request flow, and component interactions.
+- ⚙️ [**Engineering Principles**](https://github.com/sai-chaithanya-navuluri/content-core/blob/master/docs/ENGINEERING_PRINCIPLES.md) — Enterprise engineering patterns and their application throughout the platform.
+- 📈 [**Scalability**](https://github.com/sai-chaithanya-navuluri/content-core/blob/master/docs/SCALABILITY.md) — Scaling strategy, bottlenecks, worker model, and future evolution.
+- 🚀 [**Performance**](https://github.com/sai-chaithanya-navuluri/content-core/blob/master/docs/PERFORMANCE.md) — Performance characteristics, optimization techniques, and engineering tradeoffs.
+- ✅ [**Testing**](https://github.com/sai-chaithanya-navuluri/content-core/blob/master/docs/TESTING.md) — Testing philosophy, workflow validation, and CI strategy.
+- 📖 [**Architecture Decision Records (ADRs)**](https://github.com/sai-chaithanya-navuluri/content-core/tree/master/docs/adr) — Major technical decisions, alternatives considered, tradeoffs, and architectural evolution.
 
 ---
