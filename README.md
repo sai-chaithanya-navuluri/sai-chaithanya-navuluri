@@ -1,49 +1,18 @@
 # Sai Chaithanya Navuluri
 
-**Senior Java Backend Engineer** · 9+ years · AWS Certified Developer – Associate
+Senior Java Backend Engineer with 9+ years building enterprise backend systems.
 
-I build and operate enterprise backend systems in financial services — distributed
-services on Java and Spring Boot, event-driven architectures on Kafka, and
-cloud-native deployment on AWS. Over the past year, I independently designed and 
-built a production-grade AI automation platform to explore modern LLM engineering 
-while applying the same architectural principles used throughout my enterprise Java career.
+This GitHub showcases my recent independent work in AI platform engineering, applying the same software architecture and engineering principles used throughout my professional Java career.
 
 [LinkedIn](https://www.linkedin.com/in/chaithanya-n-775a96174/) · chaithanyasc208@gmail.com
 
 ---
 
-## Enterprise Engineering Experience
+## About this GitHub
 
-| | |
-|---|---|
-| **Languages** | Java 8 / 11 / 21, SQL, PL/SQL, Python, TypeScript |
-| **Backend** | Spring Boot, Spring Cloud, Spring Security, Spring Batch, Hibernate, JPA, Microservices |
-| **Messaging** | Apache Kafka, RabbitMQ, JMS, ActiveMQ |
-| **Data** | Oracle, PostgreSQL, MSSQL, MongoDB, DynamoDB, Snowflake |
-| **Cloud & Infra** | AWS (Lambda, ECS, API Gateway, S3, SQS/SNS, Step Functions, IAM), Terraform, Docker, Kubernetes |
-| **AI / LLM Platform** | Multi-provider LLM architecture (Anthropic, OpenAI, Google), Retrieval-Augmented Generation (RAG), Semantic Search, MCP Server, Agent Orchestration, Prompt Registry, LLM Evaluation Framework, Model Benchmarking, Cost & Latency Observability |
-| **Delivery** | Jenkins, GitHub Actions, Maven, SonarQube, Checkmarx, JUnit 5, Mockito, Selenium, CI/CD |
-| **Frontend** | React, TypeScript, Angular |
+My professional experience is centered on enterprise Java Full Stack development.
 
-**Northern Trust — Global Entitlements Hub** (asset servicing): Spring Boot
-microservices and REST APIs on Java 21, migrated from Java 8. Role-based access
-control integrated with enterprise IAM. Replaced nightly batch reconciliation with
-event-driven synchronization on Kafka. Co-led a point-in-time-recovery database
-migration that reduced primary database load by ~30% and cut entitlement-validation
-response times by ~35% at peak.
-
-Earlier: **Express Scripts** — decomposed monolithic claims and invoicing services
-into 15+ Spring Boot microservices with Kafka event processing on Kubernetes.
-**Wells Fargo** — ACH, EFT, and wire payment processing. **Macy's** — high-volume
-order management.
-
----
-
-## Engineering Focus
-
-My primary expertise is designing and delivering enterprise backend systems using Java, Spring Boot, Kafka, AWS, and distributed architectures.
-
-The AI platform in these repositories represents recent independent work focused on applying those same engineering principles to modern LLM systems—emphasizing modularity, observability, workflow orchestration, reliability, and long-term maintainability rather than experimentation alone.
+The repositories here focus on independent engineering work completed over the past year, where I explored modern AI platform engineering while applying the same architectural principles I use in enterprise systems—modularity, abstraction, reliability, observability, workflow orchestration, and maintainability.
 
 ---
 
@@ -76,6 +45,30 @@ mapping is set out explicitly in
 **[platform-dashboard](https://github.com/sai-chaithanya-navuluri/platform-dashboard)** — React and TypeScript operations console: run history, cost and latency trends, benchmark comparison, review queue.
 
 Four consuming pipelines (three Python, one Node.js) build on the shared kernel.
+
+### Platform Highlights
+
+- Multi-provider LLM architecture (Anthropic, OpenAI, Google)
+- Retrieval-Augmented Generation (RAG)
+- Semantic Search
+- Workflow Engine
+- Agent Orchestration
+- MCP Server
+- Prompt Registry
+- Evaluation Framework
+- Human-in-the-loop Approval
+- Cost & Latency Observability
+- FastAPI
+- SQLAlchemy
+- React + TypeScript Dashboard
+- Docker Compose
+- GitHub Actions
+
+### Why Python?
+
+The platform is implemented in Python because the modern LLM ecosystem is significantly more mature than the JVM ecosystem.
+
+The architectural decisions, engineering patterns, and system design intentionally mirror the enterprise Java systems I build professionally.
 
 **Documentation:**
 [Architecture](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/ARCHITECTURE.md) ·
