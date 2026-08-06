@@ -2,7 +2,7 @@
 
 Senior Java Backend Engineer with 9+ years building enterprise backend systems.
 
-This GitHub showcases my recent independent work in AI platform engineering, applying the same software architecture and engineering principles used throughout my professional Java career.
+This GitHub contains my recent independent work in AI platform engineering, applying the same software architecture and engineering principles used throughout my professional Java career.
 
 [LinkedIn](https://www.linkedin.com/in/chaithanya-n-775a96174/) · chaithanyasc208@gmail.com
 
@@ -10,25 +10,14 @@ This GitHub showcases my recent independent work in AI platform engineering, app
 
 ## About the Platform
 
-The repositories in this organization represent an AI automation platform built independently over the past year to explore modern AI platform engineering while applying the same architectural principles used throughout my enterprise Java career.
+The repositories in this profile together form an AI automation platform built independently over the past year to explore modern AI platform engineering while applying the same architectural principles used throughout my enterprise Java career.
 
 The platform emphasizes modular architecture, provider abstraction, workflow orchestration, versioned persistence, typed retry policies, observability, and long-term maintainability. It currently includes 53 automated tests and 11 Architecture Decision Records (ADRs).
 
----
+Python was chosen deliberately because the modern LLM ecosystem (frameworks, SDKs, and tooling) is significantly more mature than the JVM ecosystem. The architecture, engineering patterns, and system design intentionally mirror the enterprise Java systems I build professionally. The rationale is [documented in ADR-0011](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/adr/0011-python-over-java.md).
 
-## The platform in these repositories
+### [content-core](https://github.com/sai-chaithanya-navuluri/content-core) (Shared Platform Kernel):
 
-Built independently outside of work to explore modern AI platform engineering 
-while applying enterprise backend engineering principles developed through 
-9+ years of Java experience: layered architecture, provider abstraction 
-behind a stable interface, versioned persistence, typed retry at integration
-boundaries, instrumentation at a single choke point, 53 tests, 
-and 11 documented architecture decisions.
-
-Python was chosen deliberately because the modern LLM ecosystem (frameworks, SDKs, and tooling) is significantly more mature than the JVM ecosystem. The architecture, engineering patterns, and system design intentionally mirror the enterprise Java systems I build professionally. The rationale is documented in ADR-0011.[documented as ADR-0011](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/adr/0011-python-over-java.md).
-[Engineering Principles](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/ENGINEERING_PRINCIPLES.md).
-
-**[content-core](https://github.com/sai-chaithanya-navuluri/content-core)** — the platform kernel:
 The platform is organized around a shared core consumed by multiple independent pipelines, allowing reusable engineering capabilities to evolve independently of individual automation workflows.
 
 - Provider-neutral generation across Anthropic, OpenAI, and Google, with typed retry and per-call cost telemetry
@@ -39,13 +28,13 @@ The platform is organized around a shared core consumed by multiple independent 
 - Closed-loop feedback correlating content performance with features
 - FastAPI service layer, SQLAlchemy/Alembic persistence, MCP server
 
-**[platform-dashboard](https://github.com/sai-chaithanya-navuluri/platform-dashboard)** — React and TypeScript operations console: run history, cost and latency trends, benchmark comparison, review queue.
+### [platform-dashboard](https://github.com/sai-chaithanya-navuluri/platform-dashboard) (Operations Console) — React and TypeScript operations console: run history, cost and latency trends, benchmark comparison, review queue.
 
-Four consuming pipelines (three Python, one Node.js) build on the shared kernel.
+The shared platform is consumed by four independent automation pipelines (three Python, one Node.js), demonstrating reusable platform architecture instead of duplicated implementations.
 
 ---
 
-## Platform Highlights
+## Key Platform Capabilities
 
 - Multi-provider LLM architecture (Anthropic, OpenAI, Google)
 - Retrieval-Augmented Generation (RAG) with Semantic Search
@@ -62,27 +51,14 @@ Four consuming pipelines (three Python, one Node.js) build on the shared kernel.
 ---
 
 ## Documentation
-[Architecture](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/ARCHITECTURE.md) ·
-[Engineering Principles](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/ENGINEERING_PRINCIPLES.md) ·
-[Scalability](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/SCALABILITY.md) ·
-[Performance](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/PERFORMANCE.md) ·
-[Testing](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/TESTING.md) ·
-[Decision records](https://github.com/sai-chaithanya-navuluri/content-core/tree/main/docs/adr)
 
-The platform is accompanied by Architecture Decision Records (ADRs) documenting major technical decisions, tradeoffs, rejected alternatives, and the conditions under which those decisions would be revisited.
+The platform includes detailed engineering documentation covering its architecture, design decisions, scalability, testing strategy, and operational characteristics.
+
+- 🏗️ [**Architecture**](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/ARCHITECTURE.md) — Overall platform architecture, request flow, and component interactions.
+- ⚙️ [**Engineering Principles**](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/ENGINEERING_PRINCIPLES.md) — Enterprise engineering patterns and their application throughout the platform.
+- 📈 [**Scalability**](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/SCALABILITY.md) — Scaling strategy, bottlenecks, worker model, and future evolution.
+- 🚀 [**Performance**](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/PERFORMANCE.md) — Performance characteristics, optimization techniques, and engineering tradeoffs.
+- ✅ [**Testing**](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/TESTING.md) — Testing philosophy, workflow validation, and CI strategy.
+- 📖 [**Architecture Decision Records (ADRs)**](https://github.com/sai-chaithanya-navuluri/content-core/tree/main/docs/adr) — Major technical decisions, alternatives considered, tradeoffs, and architectural evolution.
 
 ---
-
-<sub>
-Architecture
-
-Engineering Principles
-
-Scalability
-
-Performance
-
-Testing
-
-ADRs
-</sub>
