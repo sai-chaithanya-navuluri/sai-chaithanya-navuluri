@@ -8,9 +8,11 @@ This GitHub showcases my recent independent work in AI platform engineering, app
 
 ---
 
-My professional experience is centered on enterprise Java Full Stack development.
+## About the Platform
 
-The repositories here focus on independent engineering work completed over the past year, where I explored modern AI platform engineering while applying the same architectural principles I use in enterprise systems—modularity, abstraction, reliability, observability, workflow orchestration, and maintainability.
+The repositories in this organization represent an AI automation platform built independently over the past year to explore modern AI platform engineering while applying the same architectural principles used throughout my enterprise Java career.
+
+The platform emphasizes modular architecture, provider abstraction, workflow orchestration, versioned persistence, typed retry policies, observability, and long-term maintainability. It currently includes 53 automated tests and 11 Architecture Decision Records (ADRs).
 
 ---
 
@@ -23,13 +25,11 @@ behind a stable interface, versioned persistence, typed retry at integration
 boundaries, instrumentation at a single choke point, 53 tests, 
 and 11 documented architecture decisions.
 
-The implementation language is Python because the LLM tooling ecosystem lives
-there — [documented as ADR-0011](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/adr/0011-python-over-java.md).
-The architectural patterns are the ones I apply in enterprise Java, and the
-mapping is set out explicitly in
+Python was chosen deliberately because the modern LLM ecosystem (frameworks, SDKs, and tooling) is significantly more mature than the JVM ecosystem. The architecture, engineering patterns, and system design intentionally mirror the enterprise Java systems I build professionally. The rationale is documented in ADR-0011.[documented as ADR-0011](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/adr/0011-python-over-java.md).
 [Engineering Principles](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/ENGINEERING_PRINCIPLES.md).
 
 **[content-core](https://github.com/sai-chaithanya-navuluri/content-core)** — the platform kernel:
+The platform is organized around a shared core consumed by multiple independent pipelines, allowing reusable engineering capabilities to evolve independently of individual automation workflows.
 
 - Provider-neutral generation across Anthropic, OpenAI, and Google, with typed retry and per-call cost telemetry
 - Step-sequenced workflow engine with per-stage retry policy and graceful degradation
@@ -43,26 +43,25 @@ mapping is set out explicitly in
 
 Four consuming pipelines (three Python, one Node.js) build on the shared kernel.
 
-### Platform Highlights
+---
+
+## Platform Highlights
 
 - Multi-provider LLM architecture (Anthropic, OpenAI, Google)
-- Retrieval-Augmented Generation (RAG)
-- Semantic Search
-- Workflow Engine
-- Agent Orchestration
+- Retrieval-Augmented Generation (RAG) with Semantic Search
+- Workflow Engine & Agent Orchestration
 - MCP Server
-- Prompt Registry
-- Evaluation Framework
-- Human-in-the-loop Approval
-- Cost & Latency Observability
-- FastAPI
-- SQLAlchemy
-- React + TypeScript Dashboard
+- Prompt Registry & Evaluation Framework
+- Human-in-the-loop approval workflow
+- Cost & latency observability
+- FastAPI + SQLAlchemy backend
+- React + TypeScript operations dashboard
 - Docker Compose
-- GitHub Actions
+- GitHub Actions CI
 
+---
 
-**Documentation:**
+## Documentation
 [Architecture](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/ARCHITECTURE.md) ·
 [Engineering Principles](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/ENGINEERING_PRINCIPLES.md) ·
 [Scalability](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/SCALABILITY.md) ·
@@ -70,16 +69,12 @@ Four consuming pipelines (three Python, one Node.js) build on the shared kernel.
 [Testing](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/TESTING.md) ·
 [Decision records](https://github.com/sai-chaithanya-navuluri/content-core/tree/main/docs/adr)
 
-Architecture Decision Records (ADRs) document the reasoning behind major technical decisions, 
-alternatives considered, and the tradeoffs accepted during the platform's evolution. Several
-document technologies deliberately **not** adopted — distributed task queues,
-graph-based agent frameworks, multi-provider routing libraries, hosted vector
-stores, container orchestration — each with the conditions under which that
-decision would reverse.
+The platform is accompanied by Architecture Decision Records (ADRs) documenting major technical decisions, tradeoffs, rejected alternatives, and the conditions under which those decisions would be revisited.
 
 ---
 
-<sub>Architecture
+<sub>
+Architecture
 
 Engineering Principles
 
@@ -89,4 +84,5 @@ Performance
 
 Testing
 
-ADRs</sub>
+ADRs
+</sub>
