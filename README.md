@@ -8,8 +8,6 @@ This GitHub showcases my recent independent work in AI platform engineering, app
 
 ---
 
-## About this GitHub
-
 My professional experience is centered on enterprise Java Full Stack development.
 
 The repositories here focus on independent engineering work completed over the past year, where I explored modern AI platform engineering while applying the same architectural principles I use in enterprise systems—modularity, abstraction, reliability, observability, workflow orchestration, and maintainability.
@@ -35,8 +33,7 @@ mapping is set out explicitly in
 
 - Provider-neutral generation across Anthropic, OpenAI, and Google, with typed retry and per-call cost telemetry
 - Step-sequenced workflow engine with per-stage retry policy and graceful degradation
-- Retrieval-Augmented Generation (RAG) using semantic retrieval with reusable indexing infrastructure
-- Semantic retrieval (RAG) with a content-addressed index cache
+- Retrieval-Augmented Generation (RAG) using semantic retrieval with a reusable content-addressed index cache
 - Role-specialised agent orchestration with a bounded revision loop
 - Evaluation framework: rule-based scorers, model-as-judge, versioned prompt registry, cross-provider benchmarking, A/B prompt experiments
 - Closed-loop feedback correlating content performance with features
@@ -64,11 +61,6 @@ Four consuming pipelines (three Python, one Node.js) build on the shared kernel.
 - Docker Compose
 - GitHub Actions
 
-### Why Python?
-
-The platform is implemented in Python because the modern LLM ecosystem is significantly more mature than the JVM ecosystem.
-
-The architectural decisions, engineering patterns, and system design intentionally mirror the enterprise Java systems I build professionally.
 
 **Documentation:**
 [Architecture](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/ARCHITECTURE.md) ·
@@ -87,4 +79,14 @@ decision would reverse.
 
 ---
 
-<sub>Open to Senior Software Engineer, Senior Java Backend Engineer, Staff Backend Engineer, and Platform Engineering roles. Experienced in enterprise Java systems and modern AI platform engineering.</sub>
+<sub>Architecture
+
+Engineering Principles
+
+Scalability
+
+Performance
+
+Testing
+
+ADRs</sub>
