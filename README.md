@@ -4,14 +4,15 @@
 
 I build and operate enterprise backend systems in financial services — distributed
 services on Java and Spring Boot, event-driven architectures on Kafka, and
-cloud-native deployment on AWS. Over the past year I've extended that work into
-LLM systems, designing and operating a production-grade AI platform end to end.
+cloud-native deployment on AWS. Over the past year, I independently designed and 
+built a production-grade AI automation platform to explore modern LLM engineering 
+while applying the same architectural principles used throughout my enterprise Java career.
 
 [LinkedIn](https://www.linkedin.com/in/chaithanya-n-775a96174/) · chaithanyasc208@gmail.com
 
 ---
 
-## Professional background
+## Enterprise Engineering Experience
 
 | | |
 |---|---|
@@ -20,14 +21,14 @@ LLM systems, designing and operating a production-grade AI platform end to end.
 | **Messaging** | Apache Kafka, RabbitMQ, JMS, ActiveMQ |
 | **Data** | Oracle, PostgreSQL, MSSQL, MongoDB, DynamoDB, Snowflake |
 | **Cloud & Infra** | AWS (Lambda, ECS, API Gateway, S3, SQS/SNS, Step Functions, IAM), Terraform, Docker, Kubernetes |
-| **AI / LLM** | Provider abstraction (Anthropic, OpenAI, Google), RAG, agent orchestration, MCP, prompt evaluation, LLM cost telemetry |
-| **Delivery** | Jenkins, GitHub Actions, Bitbucket, SonarQube, Checkmarx, JUnit, Selenium |
+| **AI / LLM Platform** | Multi-provider LLM architecture (Anthropic, OpenAI, Google), Retrieval-Augmented Generation (RAG), Semantic Search, MCP Server, Agent Orchestration, Prompt Registry, LLM Evaluation Framework, Model Benchmarking, Cost & Latency Observability |
+| **Delivery** | Jenkins, GitHub Actions, Maven, SonarQube, Checkmarx, JUnit 5, Mockito, Selenium, CI/CD |
 | **Frontend** | React, TypeScript, Angular |
 
 **Northern Trust — Global Entitlements Hub** (asset servicing): Spring Boot
 microservices and REST APIs on Java 21, migrated from Java 8. Role-based access
 control integrated with enterprise IAM. Replaced nightly batch reconciliation with
-event-driven synchronization on Kafka. Led a point-in-time-recovery database
+event-driven synchronization on Kafka. Co-led a point-in-time-recovery database
 migration that reduced primary database load by ~30% and cut entitlement-validation
 response times by ~35% at peak.
 
@@ -38,13 +39,22 @@ order management.
 
 ---
 
+## Engineering Focus
+
+My primary expertise is designing and delivering enterprise backend systems using Java, Spring Boot, Kafka, AWS, and distributed architectures.
+
+The AI platform in these repositories represents recent independent work focused on applying those same engineering principles to modern LLM systems—emphasizing modularity, observability, workflow orchestration, reliability, and long-term maintainability rather than experimentation alone.
+
+---
+
 ## The platform in these repositories
 
-A production-grade AI content platform, designed and built end to end. It began as
-a side project and is engineered as I would a production backend service: layered
-architecture, provider abstraction behind a stable interface, versioned
-persistence, typed retry at integration boundaries, instrumentation at a single
-choke point, 53 tests, and 11 documented architecture decisions.
+Built independently outside of work to explore modern AI platform engineering 
+while applying enterprise backend engineering principles developed through 
+9+ years of Java experience: layered architecture, provider abstraction 
+behind a stable interface, versioned persistence, typed retry at integration
+boundaries, instrumentation at a single choke point, 53 tests, 
+and 11 documented architecture decisions.
 
 The implementation language is Python because the LLM tooling ecosystem lives
 there — [documented as ADR-0011](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/adr/0011-python-over-java.md).
@@ -56,6 +66,7 @@ mapping is set out explicitly in
 
 - Provider-neutral generation across Anthropic, OpenAI, and Google, with typed retry and per-call cost telemetry
 - Step-sequenced workflow engine with per-stage retry policy and graceful degradation
+- Retrieval-Augmented Generation (RAG) using semantic retrieval with reusable indexing infrastructure
 - Semantic retrieval (RAG) with a content-addressed index cache
 - Role-specialised agent orchestration with a bounded revision loop
 - Evaluation framework: rule-based scorers, model-as-judge, versioned prompt registry, cross-provider benchmarking, A/B prompt experiments
@@ -74,7 +85,8 @@ Four consuming pipelines (three Python, one Node.js) build on the shared kernel.
 [Testing](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/TESTING.md) ·
 [Decision records](https://github.com/sai-chaithanya-navuluri/content-core/tree/main/docs/adr)
 
-The decision records are the most useful artifact for assessing judgment. Several
+Architecture Decision Records (ADRs) document the reasoning behind major technical decisions, 
+alternatives considered, and the tradeoffs accepted during the platform's evolution. Several
 document technologies deliberately **not** adopted — distributed task queues,
 graph-based agent frameworks, multi-provider routing libraries, hosted vector
 stores, container orchestration — each with the conditions under which that
@@ -82,4 +94,4 @@ decision would reverse.
 
 ---
 
-<sub>Open to Senior roles in Java backend, platform, and AI engineering.</sub>
+<sub>Open to Senior Software Engineer, Senior Java Backend Engineer, Staff Backend Engineer, and Platform Engineering roles. Experienced in enterprise Java systems and modern AI platform engineering.</sub>
