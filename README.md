@@ -1,6 +1,6 @@
 # Sai Chaithanya Navuluri
 
-**Senior Java Backend Engineer** · 9+ years · AWS Certified Developer – Associate · Atlanta, GA
+**Senior Java Backend Engineer** · 9+ years · AWS Certified Developer – Associate
 
 I build and operate enterprise backend systems in financial services — distributed
 services on Java and Spring Boot, event-driven architectures on Kafka, and
@@ -82,4 +82,4 @@ decision would reverse.
 
 ---
 
-<sub>Open to Senior / Lead roles in Java backend, platform, and AI engineering.</sub>
+<sub>Open to Senior roles in Java backend, platform, and AI engineering.</sub>
