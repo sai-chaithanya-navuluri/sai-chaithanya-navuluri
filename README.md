@@ -16,7 +16,7 @@ The platform emphasizes modular architecture, provider abstraction, workflow orc
 
 Python was chosen deliberately because the modern LLM ecosystem (frameworks, SDKs, and tooling) is significantly more mature than the JVM ecosystem. The architecture, engineering patterns, and system design intentionally mirror the enterprise Java systems I build professionally. The rationale is [documented in ADR-0011](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/adr/0011-python-over-java.md).
 
-### [content-core](https://github.com/sai-chaithanya-navuluri/content-core) (Shared Platform Kernel):
+### [Content-Core](https://github.com/sai-chaithanya-navuluri/content-core) (Shared Platform Kernel):
 
 The platform is organized around a shared core consumed by multiple independent pipelines, allowing reusable engineering capabilities to evolve independently of individual automation workflows.
 
@@ -28,7 +28,7 @@ The platform is organized around a shared core consumed by multiple independent 
 - Closed-loop feedback correlating content performance with features
 - FastAPI service layer, SQLAlchemy/Alembic persistence, MCP server
 
-### [platform-dashboard](https://github.com/sai-chaithanya-navuluri/platform-dashboard) (Operations Console) — React and TypeScript operations console: run history, cost and latency trends, benchmark comparison, review queue.
+### [Platform-Dashboard](https://github.com/sai-chaithanya-navuluri/platform-dashboard) (Operations Console) — React and TypeScript operations console: run history, cost and latency trends, benchmark comparison, review queue.
 
 The shared platform is consumed by four independent automation pipelines (three Python, one Node.js), demonstrating reusable platform architecture instead of duplicated implementations.
 
