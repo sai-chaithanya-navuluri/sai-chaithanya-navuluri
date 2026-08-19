@@ -8,7 +8,7 @@ This GitHub contains my recent independent work in AI platform engineering, appl
 
 ---
 
-Sentinel — Incident Intelligence Platform
+## About Sentinel — Incident Intelligence Platform
 
 A production-grade incident-management system, built end to end: Java 21, Spring Boot, PostgreSQL with pgvector, Kafka (KRaft mode), local ONNX embeddings via Deep Java Library, and a React/TypeScript operations dashboard. 34 automated tests (Testcontainers-backed), CI with a secret-scanning gate, and full Docker Compose deployment.
 
@@ -18,7 +18,7 @@ sentinel → — start with the README for the full architecture and the documen
 
 ---
 
-## About the Platform
+## About AI Content Platform
 
 The repositories in this profile together form an AI automation platform built independently over the past year to explore modern AI platform engineering while applying the same architectural principles used throughout my enterprise Java career.
 
