@@ -8,6 +8,16 @@ This GitHub contains my recent independent work in AI platform engineering, appl
 
 ---
 
+Sentinel — Incident Intelligence Platform
+
+A production-grade incident-management system, built end to end: Java 21, Spring Boot, PostgreSQL with pgvector, Kafka (KRaft mode), local ONNX embeddings via Deep Java Library, and a React/TypeScript operations dashboard. 34 automated tests (Testcontainers-backed), CI with a secret-scanning gate, and full Docker Compose deployment.
+
+Sentinel recognizes recurring production incidents — even when the wording differs — using text similarity backed by measured evidence for exactly where and why semantic embeddings were added on top of it. It surfaces what resolved a problem last time, automatically flags chronic issues that need a permanent fix rather than another patch, and optionally grounds an LLM suggestion strictly in retrieved historical data — refusing to speculate when the evidence doesn't support a conclusion, and fully functional at zero cost with that feature disabled.
+
+sentinel → — start with the README for the full architecture and the documented design decisions, including the ones where a popular tool (ZooKeeper, a @ManyToOne relationship, an unrestricted lifecycle transition) was deliberately not used, and why.
+
+---
+
 ## About the Platform
 
 The repositories in this profile together form an AI automation platform built independently over the past year to explore modern AI platform engineering while applying the same architectural principles used throughout my enterprise Java career.
