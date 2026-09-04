@@ -26,6 +26,8 @@ The platform emphasizes modular architecture, provider abstraction, workflow orc
 
 Python was chosen deliberately because the modern LLM ecosystem (frameworks, SDKs, and tooling) is significantly more mature than the JVM ecosystem. The architecture, engineering patterns, and system design intentionally mirror the enterprise Java systems I build professionally. The rationale is [documented in ADR-0011](https://github.com/sai-chaithanya-navuluri/content-core/blob/main/docs/adr/0011-python-over-java.md).
 
+MCP Market: mcpmarket.com/server/content-core-1
+
 ### [Content-Core](https://github.com/sai-chaithanya-navuluri/content-core):
 
 The platform is organized around a shared core consumed by multiple independent pipelines, allowing reusable engineering capabilities to evolve independently of individual automation workflows.
